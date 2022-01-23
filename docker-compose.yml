@@ -1,0 +1,8 @@
+version: "3.9"
+services:
+  app:
+    image: httpd:latest
+    ports:
+      - "127.0.0.1:8000:80"
+    volumes:
+      - '.:/usr/local/apache2/htdocs/'
